@@ -6,7 +6,7 @@ import net.sourceforge.pmd.cpd.Language;
 public class ObjectivecLanguage extends AbstractLanguage implements Language{
 
 	public ObjectivecLanguage(){
-		super( new ObjectivecTokenizer(), ".h", ".m" );
+		super( new ObjectivecTokenizer(), ".h", ".m", ".swift" );
 	}
 
 }
