@@ -24,7 +24,7 @@ public class ObjectivecTokenizer implements Tokenizer{
 		try {
 		    if( this.loggingEnabled ) System.out.println( "CPD Processing: " + sourceCode.getFileName() );
 			
-		    StringBuffer buffer = sourceCode.getCodeBuffer();
+		    StringBuffer buffer = new StringBuffer(sourceCode.getCodeBuffer().toString());
 			ObjCParser parser = new ObjCParser( new StringReader( buffer.toString() ) );
 
 		    Token currentToken = parser.getNextToken();
